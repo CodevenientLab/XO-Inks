@@ -1,34 +1,3 @@
-/* Namari Landing Page v.1.1.0 Style Index - a free landing page by shapingrain.com
-
-1. Default and Reset styles
-- 1.1 Input Elements
-2. Global elements
-- 2.1 Header
-- 2.2 Logo
-- 2.3 Buttons
-- 2.4 Navigation
-- 2.5 Social Elements
-- 2.6 Images
-3. Fonts and Headings
-4. Banner
-- 4.1 SignUp Form
-5. Content Elements
-- 5.1 Icons
-- 5.2 Parallax Elements
-- 5.3 Divider
-6. Landing Page Sections
-- 6.1 Features
-- 6.2 Testimonials
-- 6.3 Gallery
-- 6.4 Video
-- 6.5 Clients
-- 6.6 Pricing Table
-7. Footer
-
-
-/*------------------------------------------------------------------------------------------*/
-/* 1. Defaults & Reset of specific styles across browsers */
-/*------------------------------------------------------------------------------------------*/
 
 *, *:before, *:after {
     -webkit-box-sizing: border-box;
@@ -89,19 +58,17 @@ figure {
 }
 
 .page-border .bottom-border, .page-border .left-border, .page-border .right-border, .page-border .top-border {
-    background: #f3f3ef;
     position: fixed;
     z-index: 9999;
 }
 
 .page-border > .top-border, .page-border > .right-border, .page-border > .bottom-border, .page-border > .left-border {
-    padding: 11px;
-    background: #ccc;
+    padding: 1px;
 }
 
 .page-border .bottom-border, .page-border .top-border {
     width: 100%;
-    padding: 10px;
+    padding: 1px;
     left: 0;
 }
 
@@ -1293,7 +1260,7 @@ blockquote {
     cursor: pointer;
 }
 
-/* --------- 6.6 Clients ---------- */
+/*Clients*/
 
 #clients a {
     display: block;
@@ -1322,7 +1289,7 @@ blockquote {
     display: inline-block;
 }
 
-/* --------- 6.7 Pricing Table ---------- */
+/*Pricing Table*/
 
 .pricing-block-content {
     background: #fff;
@@ -1390,10 +1357,7 @@ blockquote {
 }
 
 
-
-/*------------------------------------------------------------------------------------------*/
 /* 7. Footer */
-/*------------------------------------------------------------------------------------------*/
 
 #landing-footer {
     clear: both;
@@ -1462,26 +1426,22 @@ blockquote {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff; /* change if the mask should have another color then white */
-    z-index: 99999; /* makes sure it stays on top */
+    background-color: #fff; 
+    z-index: 99999;
 }
 
 #status {
     width: 110px;
     height: 110px;
     position: absolute;
-    left: 50%; /* centers the loading animation horizontally one the screen */
-    top: 50%; /* centers the loading animation vertically one the screen */
+    left: 50%; 
+    top: 50%; 
     background-position: center;
-    margin: -55px 0 0 -55px; /* is width and height divided by two */
+    margin: -55px 0 0 -55px;
     text-align: center;
 }
 
-/*!
- * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
- * Copyright 2015 Daniel Cardoso <@DanielCardoso>
- * Licensed under MIT
- */
+
 .la-ball-triangle-path,
 .la-ball-triangle-path > div {
     position: relative;
@@ -1572,9 +1532,8 @@ blockquote {
     height: 30px;
 }
 
-/*
- * Animations
- */
+/*Animations*/
+
 @-webkit-keyframes ball-triangle-path-ball-one {
     0% {
         -webkit-transform: translate(0, 220%);
@@ -1999,8 +1958,7 @@ blockquote {
     }
 }
 
-/* Landscape mobile & down
-===============================*/
+/* Landscape mobile & down */
 @media (max-width: 480px) {
 
     #wrapper {
