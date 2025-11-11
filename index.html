@@ -259,6 +259,50 @@
         </aside>
     </main>
 
+    <!-- Contact Form Section -->
+    <section id="contact" class="scrollto clearfix">
+        <div class="row clearfix">
+            <div class="col-3">
+                <div class="section-heading">
+                    <h3>Get in Touch</h3>
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-subtitle">Have questions or ready to book your next ink session? Send us a message and we'll get back to you via WhatsApp!</p>
+                </div>
+            </div>
+            <div class="col-2-3">
+                <form id="contact-form" class="contact-form">
+                    <div class="col-2">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="col-2">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="col-2">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                    </div>
+                    <div class="col-2">
+                        <label for="service">Service Type</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="Custom Tattoo">Custom Tattoo</option>
+                            <option value="Cover-up Tattoo">Cover-up Tattoo</option>
+                            <option value="Piercing">Piercing</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your tattoo idea or inquiry..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Send via WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <footer id="landing-footer" class="clearfix">
         <div class="row clearfix">
             <p id="copyright" class="col-2">Copyright © 2024 XO Inks All Rights Reserved.</p>

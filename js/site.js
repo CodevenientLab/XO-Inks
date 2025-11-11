@@ -44,6 +44,33 @@ $(document).ready(function () {
 
 });
 
+// WhatsApp Form Submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+            
+            const whatsappMessage = `Hello XO Inks! 👋\n\n` +
+                `Name: ${name}\n` +
+                `Phone: ${phone}\n` +
+                `Email: ${email}\n` +
+                `Service: ${service}\n` +
+                `Message: ${message}\n\n` +
+                `Looking forward to hearing from you!`;
+            
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            
+            const whatsappNumber = '27734322826';
+            
+            window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+            
+            this.reset();
+        });
+
 
 
 $(window).load(function () { 
