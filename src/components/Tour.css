@@ -1,0 +1,96 @@
+.tour {
+  background: var(--ink-black-soft);
+  padding: 130px 0;
+}
+
+.tour__head {
+  max-width: 560px;
+  margin-bottom: 60px;
+}
+
+.tour__layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(30px, 5vw, 80px);
+  align-items: start;
+}
+
+.tour__image {
+  position: sticky;
+  top: 110px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+}
+
+.tour__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tour__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.tour__step {
+  display: grid;
+  grid-template-columns: 46px 1fr;
+  gap: 18px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.tour__step:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.tour__step-num {
+  font-family: var(--hand);
+  font-size: 1.6rem;
+  color: var(--gold);
+}
+
+.tour__step-num--teal {
+  color: var(--teal);
+}
+
+.tour__step-num--coral {
+  color: var(--coral);
+}
+
+.tour__step h3 {
+  font-size: 1.4rem;
+  margin-bottom: 4px;
+}
+
+.tour__note {
+  color: var(--gold);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.tour__body {
+  color: var(--paper-dim);
+  font-size: 0.95rem;
+  max-width: 420px;
+}
+
+.tour__cta {
+  margin-top: 6px;
+  align-self: flex-start;
+}
+
+@media (max-width: 900px) {
+  .tour__layout {
+    grid-template-columns: 1fr;
+  }
+  .tour__image {
+    position: static;
+    aspect-ratio: 16 / 10;
+  }
+}
